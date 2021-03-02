@@ -103,38 +103,64 @@ for (let i = 0; i < arr.length; i++){
   console.log(arr[i])
 }
 
+console.log("\nChallenge 9\n" )
 // Challenge 9
 // Loop through the `students` array from Challenge 1, starting at index 3 
 // and ending at index 10 (INCLUSIVE), logging out each value individually.
+for (let i = 0; i < students.length; i++){
+  if (i >= 3 && i <= 10){
+      console.log(students[i])
+  }
+}
 
-
+console.log("\nChallenge 10\n" )
 // Challenge 10
 // Loop through the `students` array from Challenge 1, making a COPY of the
 // array, starting at index 3 and ending at index 10 (INCLUSIVE). This is 
 // very similar to string building; create a new array, loop through the old
 // one, and put values from the original in the new one. Then log out each 
 // value of the copy individually.
+const newArr = [];
+for (let i = 0; i < students.length; i++){
+  if (i >= 3 && i <= 10){
+    newArr.push(students[i]);
+  }
+}
 
+for (let i = 0; i < newArr.length; i++){
+  console.log(newArr[i])
+}
 
+console.log("\nChallenge 11\n" )
 // Challenge 11
 // Make a COPY of the `students` array *using .slice*, starting at index 3 and
 // ending at index 10 (INCLUSIVE), then log out each value of the copy 
 // individually. THEN log out each value of the original array. Notice that the
 // original array didn't get any values taken out of it, because `slice` does NOT
 // modify the original array.
+const newArr1 = students.slice(3, 10);
+for (let i = 0; i < newArr1.length; i++){
+  console.log(newArr1[i])
+}
 
-
+console.log("\nChallenge 12\n" )
 // Challenge 12
 // Pull the items at indices 4-6 (inclusive) from the following array using 
 // .splice (NOT .slice!), then console.log out each item from the ORIGINAL array. 
 // Note that .splice DOES change the original array.
-const dinosaurs = ['Velociraptor', 'T-Rex', 'Stegosaurus', 'Triceratops', 'Dimetrodon', 'Allosaur', 'Spinosaurus', 'Gigantosaur']
+const dinosaurs = ['Velociraptor', 'T-Rex', 'Stegosaurus', 'Triceratops', 
+'Dimetrodon', 'Allosaur', 'Spinosaurus', 'Gigantosaur']
+const newDino = dinosaurs.splice(3, 3);
+console.log(newDino)
+for (let i = 0; i < dinosaurs.length; i++){
+  console.log(dinosaurs[i])
+}
 
-
+console.log("\nChallenge 13\n" )
 // Challenge 13
 // Use .join to change the dinosaur strings from the above array into one string
 // with a '*' string as the "separator". Then console.log out that string.
-
+console.log(newDino.join("*"))
 
 // Challenge 14
 // Use .reverse to reverse the dinosaur array and then log out the original array.
