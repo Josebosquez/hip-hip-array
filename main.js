@@ -31,7 +31,9 @@ const grades = [100, 80, 110, 75, 83, 64];
 // Challenge 3
 // Console.log out only the even numbers in the following array.
 const positiveNumbers = [5, 2, 13, 17, 4, 102, 3000];
-
+const removed = positiveNumbers.splice(1, positiveNumbers.length-1, 13, 17);
+console.log("Original arr: ", positiveNumbers)
+console.log("removed elements: ", removed)
 
 // Challenge 4
 // Console.log out the even numbers in the following array, INCLUDING the negative ones. There should be four total printings.
