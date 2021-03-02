@@ -162,11 +162,15 @@ console.log("\nChallenge 13\n" )
 // with a '*' string as the "separator". Then console.log out that string.
 console.log(newDino.join("*"))
 
+
+console.log("\nChallenge 14\n" )
 // Challenge 14
 // Use .reverse to reverse the dinosaur array and then log out the original array.
 // .reverse DOES change the original array.
+newDino.reverse()
+console.log(newDino)
 
-
+console.log("\nChallenge 15\n" )
 // Challenge 15
 // Use .concat to combine the following two arrays into a NEW array you make 
 // (.concat RETURNS an array). Then console.log out each value of that new array 
@@ -174,3 +178,7 @@ console.log(newDino.join("*"))
 // that .concat does NOT mutate the original arrays.
 const primaries = ['red', 'yellow', 'blue'];
 const secondaries = ['orange', 'green', 'purple'];
+const third = primaries.concat(secondaries);
+console.log(third)
+console.log(primaries)
+console.log(secondaries)
