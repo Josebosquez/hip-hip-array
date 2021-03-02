@@ -31,7 +31,7 @@ for (let i = grades.length -1; i > -1; i--) {
   console.log(grades[i])
 }
 
-
+console.log("\nChallenge 3\n" )
 // Challenge 3
 // Console.log out only the even numbers in the following array.
 const positiveNumbers = [5, 2, 13, 17, 4, 102, 3000];
@@ -43,20 +43,29 @@ for (let i = 0; i < positiveNumbers.length; i++){
 }
 
 
-
+console.log("\nChallenge 4\n" )
 // Challenge 4
 // Console.log out the even numbers in the following array, INCLUDING 
 //the negative ones. There should be four total printings.
 const mixedSignNumbers = [3, 15, 14, -2, -3, -8, -103, 4];
+for (let i = 0; i < mixedSignNumbers.length; i++){
+if (mixedSignNumbers[i] % 2 === 0){
+    console.log(mixedSignNumbers[i])
+}
+}
 
-
+console.log("\nChallenge 5\n" )
 // Challenge 5
 // Remove two values from the beginning and one value from the end of
 // the following array, simply by deleting them in the following line.
 // Then console.log out each value individually.
 const symmetricalCapitals = ['A', 'H', 'I', 'M', 'O', 'T', 'U', 'V', 'W', 'X', 'Y'];
-
-
+symmetricalCapitals.pop(symmetricalCapitals.length -1)
+symmetricalCapitals.splice (0, 2)
+for (let i = 0; i < symmetricalCapitals.length; i++){
+console.log(symmetricalCapitals[i])
+}
+console.log("\nChallenge 6\n" )
 // Challenge 6
 // Add a value (your choice!) to the start of the following array and 
 //two values (of your choice) to the end simply by adding them in the 
